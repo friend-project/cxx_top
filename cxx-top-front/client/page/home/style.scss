@@ -20,7 +20,7 @@
   }
 
   .swiper-pagination {
-    position: absolute;
+    position: fixed;
     right: 0;
     z-index: 1;
     bottom: px2vw(53px);

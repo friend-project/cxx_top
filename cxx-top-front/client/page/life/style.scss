@@ -96,3 +96,72 @@
     }
   }
 }
+
+
+
+.life_show {
+  width: px2vw(706px);
+  margin: 0 auto px2vw(185px);
+
+  .life_show_2 {
+    width: px2vw(706px);
+    height: px2vw(1221px);
+    margin: px2vw(35px) 0 0;
+
+    background: url(./life/2.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_3 {
+    width: px2vw(701px);
+    height: px2vw(682px);
+    margin: px2vw(76px) 0 0;
+
+    background: url(./life/3.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_4 {
+    width: px2vw(700px);
+    height: px2vw(484px);
+    margin: px2vw(126px) 0 0;
+
+    background: url(./life/4.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_5 {
+    width: px2vw(700px);
+    height: px2vw(894px);
+    margin: px2vw(24px) 0 0;
+
+    background: url(./life/5.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_6 {
+    width: px2vw(700px);
+    height: px2vw(566px);
+    margin: px2vw(20px) 0 0;
+
+    background: url(./life/6.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_7 {
+    width: px2vw(700px);
+    height: px2vw(689px);
+    margin: px2vw(24px) 0 0;
+
+    background: url(./life/7.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .life_show_8 {
+    width: px2vw(700px);
+    height: px2vw(337px);
+
+    background: url(./life/8.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+}

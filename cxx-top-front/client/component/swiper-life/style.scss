@@ -20,4 +20,21 @@
     text-align: left;
     color: rgba(0, 0, 0, .5);
   }
+
+  .pop {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+
+    background: url(./image/bg_a.png) no-repeat center center;
+    background-size: 100% 100%;
+
+    &.show {
+      display: block;
+    }
+  }
 }

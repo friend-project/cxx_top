@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {
+  useState,
+} from 'react'
 
 import './style.scss'
 
 export default (props) => {
+  const [pop, setPop] = useState(false)
   const show = () => {
+    setPop(true)
+  }
+
+  const jump = () => {
     props.history.push('/life')
   }
 
@@ -18,6 +25,10 @@ export default (props) => {
       <p
         className="tit"
       >巢品TOPPING白酒</p>
+      <div
+        className={pop ? 'pop show' : 'pop'}
+        onClick={() => jump()}
+      />
     </div>
   )
 }

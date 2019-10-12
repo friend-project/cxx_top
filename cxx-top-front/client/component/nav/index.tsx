@@ -1,12 +1,10 @@
 import React, {
   useState,
 } from 'react'
-import { Link } from 'react-router-dom'
 
 import './style.scss'
 
 export default (props) => {
-  console.log(props)
   const list = [
     {
       en: 'BRAND STORY',
@@ -34,7 +32,11 @@ export default (props) => {
     },
   ]
   const [open, setOpen] = useState(false)
-  console.log(open)
+
+  const jump = v => {
+    props.history.push(`/${v}`)
+    setOpen(false)
+  }
 
   return (
     <div className={!open ? "nav" : "nav active"}>
@@ -57,11 +59,10 @@ export default (props) => {
             v => (
               <li
                 className={open ? "active" : ""}
+                onClick={() => jump(v.en)}
               >
-                <Link to={v.en}>
-                  <span>{v.en}</span>
-                  <em>{v.cn}</em>
-                </Link>
+                <span>{v.en}</span>
+                <em>{v.cn}</em>
               </li>
             )
           )

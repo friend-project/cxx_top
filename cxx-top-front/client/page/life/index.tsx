@@ -25,6 +25,20 @@ export default (props) => {
           }
         </ul>
       </div>
+      {
+        tab === 'a'
+          ? (
+            <div className="life_show">
+              {
+                [2, 3, 4, 5, 6, 7, 8].map(
+                  v => (
+                    <div className={`life_show_${v}`} />
+                  ),
+                )
+              }
+            </div>
+          ) : null
+      }
     </>
   )
 }
