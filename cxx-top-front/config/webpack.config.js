@@ -7,7 +7,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const ReactManiFest = require('./reactFest.json')
 
@@ -22,7 +21,7 @@ module.exports = {
   target: 'web',
   mode: prod ? 'production' : 'development',
   entry: {
-    app: ['./client/client.tsx'],
+    app: ['./client/client.jsx'],
   },
   output: {
     path: path.resolve(__dirname, '../asset'),
@@ -48,18 +47,11 @@ module.exports = {
     disableHostCheck: true,
     historyApiFallback: true,
     contentBase: './',
-
-    proxy: {
-      '/api/*': {
-        target: cfg.api,
-        secure: false,
-      },
-    },
   },
   module: {
     rules: [
       {
-        test: /\.(j|t)sx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -79,7 +71,6 @@ module.exports = {
                   },
                 ],
                 '@babel/preset-react',
-                '@babel/preset-typescript',
               ],
               plugins: [
                 '@babel/plugin-proposal-function-bind',
@@ -87,10 +78,6 @@ module.exports = {
                 '@babel/plugin-transform-runtime',
               ],
             },
-          /*
-          }, {
-            loader: 'eslint-loader',
-          */
           },
         ],
       }, {
@@ -137,7 +124,6 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss', '.jpg', '.jpeg', '.png', '.gif', '.svg'],
     alias: {
       client: path.resolve(__dirname, '../client'),
-      tool: path.resolve(__dirname, '../client/tool'),
       page: path.resolve(__dirname, '../client/page'),
       component: path.resolve(__dirname, '../client/component'),
       container: path.resolve(__dirname, '../client/container'),
@@ -156,27 +142,6 @@ module.exports = {
       template: './index.html',
       filename: 'index.html',
     }),
-    // Scope Hoisting(作用域提升)
-    new webpack.optimize.ModuleConcatenationPlugin(),
-    // 打印更新的模块路径
-    new webpack.NamedModulesPlugin(),
-    // 热更新插件
-    new webpack.HotModuleReplacementPlugin(),
-    // 分析 webpack 打包依赖
-    new BundleAnalyzerPlugin(
-      {
-        analyzerMode: prod ? 'disabled' : 'server',
-        analyzerHost: ip.address(),
-        analyzerPort: cfg.port + 1,
-        reportFilename: 'report.html',
-        defaultSizes: 'parsed',
-        openAnalyzer: true,
-        generateStatsFile: false,
-        statsFilename: 'stats.json',
-        statsOptions: null,
-        logLevel: 'info',
-      },
-    ),
   ],
   optimization: {
     minimizer: [
@@ -190,51 +155,7 @@ module.exports = {
           map: { inline: false },
         },
       }),
-      // 多进程压缩
-      new ParallelUglifyPlugin({
-        cacheDir: '.cache/',
-        uglifyJS: {
-          output: {
-            comments: false,
-            beautify: false,
-          },
-          compress: {
-            // warnings: false,
-            drop_console: true,
-            collapse_vars: true,
-            reduce_vars: true,
-          },
-        },
-      }),
     ],
-    // 分割代码
-    splitChunks: {
-      cacheGroups: {
-        common: {
-          // initial: 初始模块; async: 按需加载模块; all: 全部模块
-          chunks: 'initial',
-          // 模块超过 x 自动被抽离成公共模块
-          minSize: 0,
-          // 模块被引用 >= 2 次，便分割
-          minChunks: 2,
-          // 异步加载chunk的并发请求数量 <= 5
-          maxAsyncRequests: 5,
-          // 一个入口并发加载的 chunk 数量 <=3
-          maxInitialRequests: 3,
-          // 默认由模块名+hash命名，名称相同时多个模块将合并为1个，可以设置为function
-          name: true,
-          // 命名分隔符
-          automaticNameDelimiter: '~',
-        },
-        vendor: {
-          priority: 1,
-          test: /node_modules/,
-          chunks: 'initial',
-          minSize: 0,
-          minChunks: 2,
-        },
-      },
-    },
     noEmitOnErrors: prod,
   },
 }

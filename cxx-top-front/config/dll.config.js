@@ -14,7 +14,6 @@ const vendors = {
     'react-redux',
     'react-router',
     'react-router-dom',
-    'isomorphic-fetch',
   ],
 }
 
