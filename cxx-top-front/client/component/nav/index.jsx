@@ -9,26 +9,36 @@ export default (props) => {
     {
       en: 'BRAND STORY',
       cn: '品牌故事',
+      uri: 'brand',
     },
     {
       en: 'TOPPING LIQUOR',
       cn: '巢品白酒',
+      uri: 'life',
     },
     {
       en: 'CLOTHING',
       cn: '服装和饰品',
+      uri: 'clothing',
     },
+    /*
     {
       en: 'LUGGAGE',
       cn: '箱包',
+      uri: 'luggage',
     },
+    */
+    /*
     {
       en: 'CUSTOMMADE',
       cn: '订制',
+      uri: 'custommade',
     },
+    */
     {
       en: 'HOT TO BUY',
       cn: '如何购买',
+      uri: 'buy',
     },
   ]
   const [open, setOpen] = useState(false)
@@ -59,7 +69,7 @@ export default (props) => {
             v => (
               <li
                 className={open ? "active" : ""}
-                onClick={() => jump(v.en)}
+                onClick={() => jump(v.uri)}
               >
                 <span>{v.en}</span>
                 <em>{v.cn}</em>

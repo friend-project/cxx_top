@@ -1,0 +1,65 @@
+@import "../../_base.scss";
+
+.clothing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(./image/bg_a.png) no-repeat center center;
+  background-size: 100% 100%;
+
+  &.a {
+    background: url(./image/bg_a.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  &.b {
+    background: url(./image/bg_b.png) no-repeat center center;
+    background-size: 100% 101%;
+  }
+
+  .tab {
+    position: fixed;
+    right: px2vw(20px);
+    bottom: px2vw(20px);
+    left: px2vw(20px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    height: px2vw(110px);
+
+    li {
+      width: px2vw(110px);
+      height: px2vw(110px);
+
+      border-radius: px2vw(8px);
+    }
+
+
+    li:nth-child(1) {
+      background: #fff url(./image/a.png) no-repeat center center;
+      background-size: px2vw(64px) px2vw(84px);
+    }
+    li:nth-child(1).active {
+      box-shadow: 0 0 0 px2vw(4px) rgb(245, 166, 35) inset;
+    }
+    li:nth-child(2) {
+      margin: 0 0 0 px2vw(20px);
+      background: #fff url(./image/b.png) no-repeat center center;
+      background-size: px2vw(55px) px2vw(86px);
+    }
+    li:nth-child(2).active {
+      box-shadow: 0 0 0 px2vw(4px) rgb(245, 166, 35) inset;
+    }
+  }
+}
+
+.tshirt_show,
+.shoubiao_show {
+  text-align: center;
+
+  img {
+    width: px2vw(690px);
+    margin: px2vw(20px) auto;
+  }
+}

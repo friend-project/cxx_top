@@ -1,0 +1,45 @@
+@import "../../_base.scss";
+
+.bug {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .logo {
+    width: px2vw(543px);
+    height: px2vw(228px);
+    margin: px2vw(289px) 0 0 px2vw(58px);
+
+    background: url(./image/1.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .tianmao {
+    width: px2vw(607px);
+    height: px2vw(156px);
+    margin: px2vw(68px) 0 0 px2vw(58px);
+
+    background: url(./image/2.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .jingdong {
+    width: px2vw(607px);
+    height: px2vw(156px);
+    margin: px2vw(68px) 0 0 px2vw(58px);
+
+    background: url(./image/3.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+
+
+  .mendian {
+    width: px2vw(631px);
+    height: px2vw(281px);
+    margin: px2vw(68px) 0 0 px2vw(58px);
+
+    background: url(./image/4.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+}

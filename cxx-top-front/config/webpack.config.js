@@ -123,6 +123,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss', '.jpg', '.jpeg', '.png', '.gif', '.svg'],
     alias: {
+      config: path.resolve(__dirname, '../client/config'),
       client: path.resolve(__dirname, '../client'),
       page: path.resolve(__dirname, '../client/page'),
       component: path.resolve(__dirname, '../client/component'),
