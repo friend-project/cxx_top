@@ -31,7 +31,7 @@ export default () => {
         tab === '品牌故事'
           ? (
             <div className="brand_show">
-              <img src={`${img}pinpai/1.png`} />
+              <img src={`${img}pinpai/2.png`} />
             </div>
           ) : null
       }
@@ -39,7 +39,7 @@ export default () => {
         tab === '品牌愿景'
           ? (
             <div className="brand_show">
-              <img src={`${img}pinpai/2.png`} />
+              <img src={`${img}pinpai/1.png`} />
             </div>
           ) : null
       }
