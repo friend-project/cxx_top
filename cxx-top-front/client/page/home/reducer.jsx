@@ -13,7 +13,7 @@ export const setLang = res => (dispatch) => {
 
 
 export const lang = (
-  state = 'en',
+  state = 'cn',
   action,
 ) => {
   switch (action.type) {

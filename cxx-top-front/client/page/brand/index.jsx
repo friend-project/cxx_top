@@ -1,12 +1,14 @@
 import React, {
   useState,
 } from 'react'
+import { useSelector } from 'react-redux'
 
 import { img } from 'config/config'
 
 import './style.scss'
 
 export default () => {
+  const lang = useSelector(state => state.lang)
   const [tab, setTab] = useState('品牌故事')
 
   return (
@@ -31,7 +33,7 @@ export default () => {
         tab === '品牌故事'
           ? (
             <div className="brand_show">
-              <img src={`${img}pinpai/2.png`} />
+              <img src={`${img}image_${lang}/pinpai/2.png`} />
             </div>
           ) : null
       }
@@ -39,7 +41,7 @@ export default () => {
         tab === '品牌愿景'
           ? (
             <div className="brand_show">
-              <img src={`${img}pinpai/1.png`} />
+              <img src={`${img}image_${lang}/pinpai/1.png`} />
             </div>
           ) : null
       }

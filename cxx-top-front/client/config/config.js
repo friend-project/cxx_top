@@ -1,8 +1,8 @@
 const env = require('../../config/env')
 
 const img = {
-  local: 'http://m.topping.loseyear.com/public/',
-  prod: 'http://m.topping.loseyear.com/public/',
+  local: 'http://m.topping.loseyear.com/',
+  prod: 'http://m.topping.loseyear.com/',
 }
 
 module.exports = {

@@ -2,12 +2,14 @@ import React, {
   useEffect,
   useState,
 } from 'react'
+import { useSelector } from 'react-redux'
 
 import { img } from 'config/config'
 
 import './style.scss'
 
 export default (props) => {
+  const lang = useSelector(state => state.lang)
   const [tab, setTab] = useState('a')
 
   useEffect(() => {
@@ -39,8 +41,8 @@ export default (props) => {
         tab === 'a'
           ? (
             <div className="tshirt_show">
-              <img src={`${img}fuzhuang-tshirt/1.png`} />
-              <img src={`${img}fuzhuang-tshirt/2.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-tshirt/1.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-tshirt/2.png`} />
             </div>
           ) : null
       }
@@ -48,9 +50,9 @@ export default (props) => {
         tab === 'b'
           ? (
             <div className="shoubiao_show">
-              <img src={`${img}fuzhuang-shoubiao/1.png`} />
-              <img src={`${img}fuzhuang-shoubiao/2.png`} />
-              <img src={`${img}fuzhuang-shoubiao/3.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/1.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/2.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/3.png`} />
             </div>
           ) : null
       }
