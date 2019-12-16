@@ -1,4 +1,5 @@
 import React, {
+  useEffect,
   useState,
 } from 'react'
 
@@ -8,8 +9,18 @@ import './style.scss'
 
 export default (props) => {
   const [tab, setTab] = useState('a')
-  console.log(props)
-  console.log(tab)
+
+  const setT = (v) => {
+    setTab(v)
+  }
+
+  useEffect(() => {
+    if (['c', 'd'].indexOf(tab) > -1) {
+      props.history.push('#c')
+    } else {
+      props.history.push('#')
+    }
+  }, [tab])
 
   return (
     <>
@@ -20,7 +31,7 @@ export default (props) => {
               v => (
                 <li
                   className={tab === v ? 'active' : ''}
-                  onClick={() => setTab(v)}
+                  onClick={() => setT(v)}
                 />
               )
             )

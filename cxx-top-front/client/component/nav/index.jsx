@@ -5,6 +5,12 @@ import React, {
 import './style.scss'
 
 export default (props) => {
+  const {
+    location: {
+      pathname,
+      hash,
+    },
+  } = props
   const list = [
     {
       en: 'BRAND STORY',
@@ -51,12 +57,17 @@ export default (props) => {
   return (
     <div className={!open ? "nav" : "nav active"}>
       <div
-        className="logo"
+        className={hash ? 'logo black' : 'logo'}
         onClick={() => props.history.push('/')}
       />
-      <div className="slogin" />
+      {
+        pathname === '/'
+          ? (
+            <div className="slogin" />
+          ) : null
+      }
       <div
-        className={!open ? "btn" : "btn active"}
+        className={!open ? (hash ? 'btn black' : 'btn') : 'btn active'}
         onClick={() => setOpen(!open)}
       >
         <span className="one" />

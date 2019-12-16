@@ -1,4 +1,5 @@
 import React, {
+  useEffect,
   useState,
 } from 'react'
 
@@ -8,8 +9,15 @@ import './style.scss'
 
 export default (props) => {
   const [tab, setTab] = useState('a')
-  console.log(props)
-  console.log(tab)
+
+  useEffect(() => {
+    if (['a', 'b'].indexOf(tab) > -1) {
+      props.history.push('#c')
+    } else {
+      props.history.push('#')
+    }
+  }, [tab])
+
 
   return (
     <>

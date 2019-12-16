@@ -1,13 +1,18 @@
 import React from 'react'
 import Swiper from 'react-id-swiper'
+import { useSelector, useDispatch } from 'react-redux'
 
 import SwiperLife from 'component/swiper-life'
 import SwiperBrand from 'component/swiper-brand'
 import SwiperClothing from 'component/swiper-clothing'
 
+import { setLang } from './reducer'
+
 import './style.scss'
 
 export default (props) => {
+  const dispatch = useDispatch()
+  const lang = useSelector(state => state.lang)
   const params = {
     direction: 'vertical',
     effect: 'fade',
@@ -37,12 +42,16 @@ export default (props) => {
       <div
         className="lang"
       >
-        <span
-          className="cn act"
-        />
-        <span
-          className="en"
-        />
+        {
+          ['cn', 'en'].map(
+            v => (
+              <span
+                className={lang === v ? `${v} act` : v}
+                onClick={() => dispatch(setLang(v))}
+              />
+            )
+          )
+        }
       </div>
     </div>
   )

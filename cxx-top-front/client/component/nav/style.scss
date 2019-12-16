@@ -28,6 +28,11 @@
     background-size: px2vw(90px) px2vw(75px);
   }
 
+  .logo.black {
+    background: url(./image/logo-white.png) no-repeat center center;
+    background-size: px2vw(90px) px2vw(75px);
+  }
+
   .slogin {
     position: absolute;
     top: px2vw(82px);
@@ -48,6 +53,10 @@
 
     width: px2vw(45px);
     height: px2vw(45px);
+
+    &.black span {
+      background: #fff;
+    }
 
     span {
       position: absolute;
@@ -138,31 +147,41 @@
 
 @keyframes btnOne {
 
-  from {
-    transform: translate(0, px2vw(12.5px)) rotate(45deg);
+  0% {
+    transform: translate(0, px2vw(12.5px)) rotate(405deg);
   }
-  to {
+  50% {
+    transform: translate(0, px2vw(12.5px)) rotate(0deg);
+  }
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
 }
 
 @keyframes btnOneAct {
 
-  from {
+  0% {
     transform: translate(0, 0) rotate(0deg);
   }
-  to {
-    transform: translate(0, px2vw(12.5px)) rotate(45);
+  30% {
+    transform: translate(0, px2vw(12.5px)) rotate(0deg);
+  }
+  100 {
+    transform: translate(0, px2vw(12.5px)) rotate(405deg);
   }
 }
 
 @keyframes btnTwo {
 
-  from {
+  0% {
     width: 0;
     transform: translate(px2vw(22.5px), 0);
   }
-  to {
+  30% {
+    width: 0;
+    transform: translate(px2vw(22.5px), 0);
+  }
+  100% {
     width: 100%;
     transform: translate(0, 0);
   }
@@ -170,11 +189,15 @@
 
 @keyframes btnTwoAct {
 
-  from {
+  0% {
     width: 100%;
     transform: translate(0, 0);
   }
-  to {
+  30% {
+    width: 100%;
+    transform: translate(0, 0);
+  }
+  100% {
     width: 0;
     transform: translate(px2vw(22.5px), 0);
   }
@@ -182,21 +205,27 @@
 
 @keyframes btnThr {
 
-  from {
-    transform: translate(0, px2vw(-12.5px)) rotate(-45deg);
+  0% {
+    transform: translate(0, px2vw(-12.5px)) rotate(315deg);
   }
-  to {
+  30% {
+    transform: translate(0, px2vw(-12.5px)) rotate(0deg);
+  }
+  100% {
     transform: translate(0, 0) rotate(0deg);
   }
 }
 
 @keyframes btnThrAct {
 
-  from {
+  0% {
     transform: translate(0, 0) rotate(0deg);
   }
-  to {
-    transform: translate(0, px2vw(-12.5px)) rotate(-45deg);
+  30% {
+    transform: translate(0, px2vw(-12.5px)) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, px2vw(-12.5px)) rotate(315deg);
   }
 }
 

@@ -75,8 +75,6 @@
       float: left;
       width: px2vw(43px);
       height: px2vw(43px);
-
-      background: red;
     }
 
     .cn {
@@ -96,7 +94,7 @@
     }
 
     .en.act {
-      background: url(./image/en.png) no-repeat center center;
+      background: url(./image/en_act.png) no-repeat center center;
       background-size: px2vw(43px) px2vw(43px);
     }
   }
