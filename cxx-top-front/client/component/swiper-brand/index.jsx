@@ -5,30 +5,19 @@ import React, {
 import './style.scss'
 
 export default (props) => {
-  const [pop, setPop] = useState(false)
-  const show = () => {
-    setPop(true)
-  }
-
   const jump = () => {
-    props.history.push('/life')
+    props.history.push('/brand')
   }
 
   return (
     <div
-      className="swiper-life"
+      className="swiper-brand"
     >
       <span
         className="img"
-        onClick={() => show()}
-      />
-      <p
-        className="tit"
-      >巢品TOPPING白酒</p>
-      <div
-        className={pop ? 'pop show' : 'pop'}
         onClick={() => jump()}
       />
+      <p className="tit"/>
     </div>
   )
 }

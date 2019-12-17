@@ -27,6 +27,54 @@ export default (props) => {
   return (
     <>
       <div className={`life ${tab}`}>
+        {
+          tab === 'a'
+            ? (
+              <div className="life_ani">
+                <img src={`${img}image_${lang}/rensheng53/1.png`} />
+              </div>
+            ) : null
+        }
+        {
+          tab === 'b'
+            ? (
+              <div className="ranliao_show">
+                <img src={`${img}image_${lang}/ranliao/1.png`} />
+              </div>
+            ) : null
+        }
+        {
+          tab === 'c'
+            ? (
+              <div className="duwu_show">
+                <img src={`${img}image_${lang}/duwu/1.png`} />
+              </div>
+            ) : null
+        }
+        {
+          tab === 'd'
+            ? (
+              <div className="jijie_show">
+                <img src={`${img}image_${lang}/jijie/1.png`} />
+              </div>
+            ) : null
+        }
+        {
+          tab === 'e'
+            ? (
+              <div className="xianliang_show">
+                <img src={`${img}image_${lang}/renshengxianliang/1.png`} />
+              </div>
+            ) : null
+        }
+        {
+          tab === 'f'
+            ? (
+              <div className="rensheng42_show">
+                <img src={`${img}image_${lang}/rensheng42/1.png`} />
+              </div>
+            ) : null
+        }
         <ul className="tab">
           {
             ['a', 'b', 'c', 'd', 'e', 'f'].map(
@@ -40,20 +88,6 @@ export default (props) => {
           }
         </ul>
       </div>
-      {
-        tab === 'a'
-          ? (
-            <div className="life_show">
-              {
-                [2, 3, 4, 5, 6, 7, 8].map(
-                  v => (
-                    <div className={`life_show_${v}`} />
-                  ),
-                )
-              }
-            </div>
-          ) : null
-      }
       {
         tab === 'a'
           ? (

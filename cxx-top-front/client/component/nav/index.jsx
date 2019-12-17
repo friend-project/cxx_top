@@ -82,8 +82,7 @@ export default (props) => {
                 className={open ? "active" : ""}
                 onClick={() => jump(v.uri)}
               >
-                <span>{v.en}</span>
-                <em>{v.cn}</em>
+                <span className={v.uri} />
               </li>
             )
           )

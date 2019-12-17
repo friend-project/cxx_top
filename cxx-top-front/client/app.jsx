@@ -11,6 +11,7 @@ import Brand from 'page/brand'
 import Buy from 'page/buy'
 
 import './style.scss'
+import './animate.css'
 
 export default () => (
   <>
