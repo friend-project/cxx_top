@@ -31,8 +31,8 @@ export default (props) => {
           tab === 'a'
             ? (
               <div className="life_ani">
-                <img src={`${img}image_${lang}/life_ani/life_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/life_ani_2.png`} />
+                <img src={`${img}image_${lang}/life_ani/life_ani_1.jpg`} />
+                <img src={`${img}image_${lang}/life_ani/life_ani_2.jpg`} />
               </div>
             ) : null
         }
@@ -40,8 +40,8 @@ export default (props) => {
           tab === 'b'
             ? (
               <div className="ranliao_ani">
-                <img src={`${img}image_${lang}/life_ani/ranliao_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/ranliao_ani_2.png`} />
+                <img src={`${img}image_${lang}/life_ani/ranliao_ani_1.jpg`} />
+                <img src={`${img}image_${lang}/life_ani/ranliao_ani_2.jpg`} />
               </div>
             ) : null
         }
@@ -49,8 +49,8 @@ export default (props) => {
           tab === 'c'
             ? (
               <div className="duwu_ani">
-                <img src={`${img}image_${lang}/life_ani/duwu_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/duwu_ani_2.png`} />
+                <img src={`${img}image_${lang}/life_ani/duwu_ani_1.jpg`} />
+                <img src={`${img}image_${lang}/life_ani/duwu_ani_2.jpg`} />
               </div>
             ) : null
         }
@@ -58,8 +58,8 @@ export default (props) => {
           tab === 'd'
             ? (
               <div className="jijie_ani">
-                <img src={`${img}image_${lang}/life_ani/jijie_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/jijie_ani_2.png`} />
+                <img src={`${img}image_${lang}/life_ani/jijie_ani_1.jpg`} />
+                <img src={`${img}image_${lang}/life_ani/jijie_ani_2.jpg`} />
               </div>
             ) : null
         }
@@ -67,8 +67,8 @@ export default (props) => {
           tab === 'e'
             ? (
               <div className="xianliang_ani">
-                <img src={`${img}image_${lang}/life_ani/xianliang_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/xianliang_ani_2.png`} />
+                <img src={`${img}image_${lang}/life_ani/xianliang_ani_1.jpg`} />
+                <img src={`${img}image_${lang}/life_ani/xianliang_ani_2.jpg`} />
               </div>
             ) : null
         }
@@ -89,12 +89,12 @@ export default (props) => {
         tab === 'a'
           ? (
             <div className="life_show">
-              <img src={`${img}image_${lang}/rensheng53/1.png`} />
-              <img src={`${img}image_${lang}/rensheng53/2.png`} />
-              <img src={`${img}image_${lang}/rensheng53/3.png`} />
-              <img src={`${img}image_${lang}/rensheng53/4.png`} />
-              <img src={`${img}image_${lang}/rensheng53/5.png`} />
-              <img src={`${img}image_${lang}/rensheng53/6.png`} />
+              <img src={`${img}image_${lang}/rensheng53/1.jpg`} />
+              <img src={`${img}image_${lang}/rensheng53/2.jpg`} />
+              <img src={`${img}image_${lang}/rensheng53/3.jpg`} />
+              <img src={`${img}image_${lang}/rensheng53/4.jpg`} />
+              <img src={`${img}image_${lang}/rensheng53/5.jpg`} />
+              <img src={`${img}image_${lang}/rensheng53/6.jpg`} />
             </div>
           ) : null
       }
@@ -102,10 +102,10 @@ export default (props) => {
         tab === 'b'
           ? (
             <div className="ranliao_show">
-              <img src={`${img}image_${lang}/ranliao/1.png`} />
-              <img src={`${img}image_${lang}/ranliao/2.png`} />
-              <img src={`${img}image_${lang}/ranliao/3.png`} />
-              <img src={`${img}image_${lang}/ranliao/4.png`} />
+              <img src={`${img}image_${lang}/ranliao/1.jpg`} />
+              <img src={`${img}image_${lang}/ranliao/2.jpg`} />
+              <img src={`${img}image_${lang}/ranliao/3.jpg`} />
+              <img src={`${img}image_${lang}/ranliao/4.jpg`} />
             </div>
           ) : null
       }
@@ -113,10 +113,10 @@ export default (props) => {
         tab === 'c'
           ? (
             <div className="duwu_show">
-              <img src={`${img}image_${lang}/duwu/1.png`} />
-              <img src={`${img}image_${lang}/duwu/2.png`} />
-              <img src={`${img}image_${lang}/duwu/3.png`} />
-              <img src={`${img}image_${lang}/duwu/4.png`} />
+              <img src={`${img}image_${lang}/duwu/1.jpg`} />
+              <img src={`${img}image_${lang}/duwu/2.jpg`} />
+              <img src={`${img}image_${lang}/duwu/3.jpg`} />
+              <img src={`${img}image_${lang}/duwu/4.jpg`} />
             </div>
           ) : null
       }
@@ -124,12 +124,12 @@ export default (props) => {
         tab === 'd'
           ? (
             <div className="jijie_show">
-              <img src={`${img}image_${lang}/jijie/1.png`} />
-              <img src={`${img}image_${lang}/jijie/2.png`} />
-              <img src={`${img}image_${lang}/jijie/3.png`} />
-              <img src={`${img}image_${lang}/jijie/4.png`} />
-              <img src={`${img}image_${lang}/jijie/5.png`} />
-              <img src={`${img}image_${lang}/jijie/6.png`} />
+              <img src={`${img}image_${lang}/jijie/1.jpg`} />
+              <img src={`${img}image_${lang}/jijie/2.jpg`} />
+              <img src={`${img}image_${lang}/jijie/3.jpg`} />
+              <img src={`${img}image_${lang}/jijie/4.jpg`} />
+              <img src={`${img}image_${lang}/jijie/5.jpg`} />
+              <img src={`${img}image_${lang}/jijie/6.jpg`} />
             </div>
           ) : null
       }
@@ -137,12 +137,12 @@ export default (props) => {
         tab === 'e'
           ? (
             <div className="xianliang_show">
-              <img src={`${img}image_${lang}/renshengxianliang/1.png`} />
-              <img src={`${img}image_${lang}/renshengxianliang/2.png`} />
-              <img src={`${img}image_${lang}/renshengxianliang/3.png`} />
-              <img src={`${img}image_${lang}/renshengxianliang/4.png`} />
-              <img src={`${img}image_${lang}/renshengxianliang/5.png`} />
-              <img src={`${img}image_${lang}/renshengxianliang/6.png`} />
+              <img src={`${img}image_${lang}/renshengxianliang/1.jpg`} />
+              <img src={`${img}image_${lang}/renshengxianliang/2.jpg`} />
+              <img src={`${img}image_${lang}/renshengxianliang/3.jpg`} />
+              <img src={`${img}image_${lang}/renshengxianliang/4.jpg`} />
+              <img src={`${img}image_${lang}/renshengxianliang/5.jpg`} />
+              <img src={`${img}image_${lang}/renshengxianliang/6.jpg`} />
             </div>
           ) : null
       }
@@ -150,11 +150,11 @@ export default (props) => {
         tab === 'f'
           ? (
             <div className="rensheng42_show">
-              <img src={`${img}image_${lang}/rensheng42/1.png`} />
-              <img src={`${img}image_${lang}/rensheng42/2.png`} />
-              <img src={`${img}image_${lang}/rensheng42/3.png`} />
-              <img src={`${img}image_${lang}/rensheng42/4.png`} />
-              <img src={`${img}image_${lang}/rensheng42/5.png`} />
+              <img src={`${img}image_${lang}/rensheng42/1.jpg`} />
+              <img src={`${img}image_${lang}/rensheng42/2.jpg`} />
+              <img src={`${img}image_${lang}/rensheng42/3.jpg`} />
+              <img src={`${img}image_${lang}/rensheng42/4.jpg`} />
+              <img src={`${img}image_${lang}/rensheng42/5.jpg`} />
             </div>
           ) : null
       }

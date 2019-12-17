@@ -41,8 +41,8 @@ export default (props) => {
         tab === 'a'
           ? (
             <div className="tshirt_show">
-              <img src={`${img}image_${lang}/fuzhuang-tshirt/1.png`} />
-              <img src={`${img}image_${lang}/fuzhuang-tshirt/2.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-tshirt/1.jpg`} />
+              <img src={`${img}image_${lang}/fuzhuang-tshirt/2.jpg`} />
             </div>
           ) : null
       }
@@ -50,9 +50,9 @@ export default (props) => {
         tab === 'b'
           ? (
             <div className="shoubiao_show">
-              <img src={`${img}image_${lang}/fuzhuang-shoubiao/1.png`} />
-              <img src={`${img}image_${lang}/fuzhuang-shoubiao/2.png`} />
-              <img src={`${img}image_${lang}/fuzhuang-shoubiao/3.png`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/1.jpg`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/2.jpg`} />
+              <img src={`${img}image_${lang}/fuzhuang-shoubiao/3.jpg`} />
             </div>
           ) : null
       }
