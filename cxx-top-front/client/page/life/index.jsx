@@ -31,47 +31,44 @@ export default (props) => {
           tab === 'a'
             ? (
               <div className="life_ani">
-                <img src={`${img}image_${lang}/rensheng53/1.png`} />
+                <img src={`${img}image_${lang}/life_ani/life_ani_1.png`} />
+                <img src={`${img}image_${lang}/life_ani/life_ani_2.png`} />
               </div>
             ) : null
         }
         {
           tab === 'b'
             ? (
-              <div className="ranliao_show">
-                <img src={`${img}image_${lang}/ranliao/1.png`} />
+              <div className="ranliao_ani">
+                <img src={`${img}image_${lang}/life_ani/ranliao_ani_1.png`} />
+                <img src={`${img}image_${lang}/life_ani/ranliao_ani_2.png`} />
               </div>
             ) : null
         }
         {
           tab === 'c'
             ? (
-              <div className="duwu_show">
-                <img src={`${img}image_${lang}/duwu/1.png`} />
+              <div className="duwu_ani">
+                <img src={`${img}image_${lang}/life_ani/duwu_ani_1.png`} />
+                <img src={`${img}image_${lang}/life_ani/duwu_ani_2.png`} />
               </div>
             ) : null
         }
         {
           tab === 'd'
             ? (
-              <div className="jijie_show">
-                <img src={`${img}image_${lang}/jijie/1.png`} />
+              <div className="jijie_ani">
+                <img src={`${img}image_${lang}/life_ani/jijie_ani_1.png`} />
+                <img src={`${img}image_${lang}/life_ani/jijie_ani_2.png`} />
               </div>
             ) : null
         }
         {
           tab === 'e'
             ? (
-              <div className="xianliang_show">
-                <img src={`${img}image_${lang}/renshengxianliang/1.png`} />
-              </div>
-            ) : null
-        }
-        {
-          tab === 'f'
-            ? (
-              <div className="rensheng42_show">
-                <img src={`${img}image_${lang}/rensheng42/1.png`} />
+              <div className="xianliang_ani">
+                <img src={`${img}image_${lang}/life_ani/xianliang_ani_1.png`} />
+                <img src={`${img}image_${lang}/life_ani/xianliang_ani_2.png`} />
               </div>
             ) : null
         }

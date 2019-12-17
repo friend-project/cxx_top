@@ -106,6 +106,28 @@
   }
 }
 
+.life_ani {
+
+  img {
+    position: absolute;
+    left: px2vw(28px);
+  }
+
+  img:nth-child(1) {
+    width: px2vw(426px);
+    height: px2vw(45px);
+
+    bottom: px2vw(472px);
+  }
+
+  img:nth-child(2) {
+    width: px2vw(585px);
+    height: px2vw(240px);
+
+    bottom: px2vw(190px);
+  }
+}
+
 .ranliao_show {
   text-align: center;
 
@@ -124,12 +146,56 @@
   }
 }
 
+.ranliao_ani {
+
+  img {
+    position: absolute;
+    left: px2vw(47px);
+  }
+
+  img:nth-child(1) {
+    width: px2vw(149px);
+    height: px2vw(73px);
+
+    bottom: px2vw(481px);
+  }
+
+  img:nth-child(2) {
+    width: px2vw(496px);
+    height: px2vw(243px);
+
+    bottom: px2vw(205px);
+  }
+}
+
 .duwu_show {
   text-align: center;
 
   img {
     width: px2vw(690px);
     margin: px2vw(20px) auto;
+  }
+}
+
+.duwu_ani {
+
+  img {
+    position: absolute;
+    left: px2vw(33px);
+  }
+
+  img:nth-child(1) {
+    width: px2vw(192px);
+    height: px2vw(91px);
+
+    bottom: px2vw(274px);
+  }
+
+  img:nth-child(2) {
+    width: px2vw(607px);
+    height: px2vw(54px);
+
+    bottom: px2vw(190px);
   }
 }
 
@@ -142,12 +208,56 @@
   }
 }
 
+.jijie_ani {
+
+  img {
+    position: absolute;
+    left: px2vw(38px);
+  }
+
+  img:nth-child(1) {
+    width: px2vw(428px);
+    height: px2vw(94px);
+
+    bottom: px2vw(350px);
+  }
+
+  img:nth-child(2) {
+    width: px2vw(288px);
+    height: px2vw(122px);
+
+    bottom: px2vw(196px);
+  }
+}
+
 .xianliang_show {
   text-align: center;
 
   img {
     width: px2vw(690px);
     margin: px2vw(20px) auto;
+  }
+}
+
+.xianliang_ani {
+
+  img {
+    position: absolute;
+    left: px2vw(25px);
+  }
+
+  img:nth-child(1) {
+    width: px2vw(448px);
+    height: px2vw(65px);
+
+    bottom: px2vw(463px);
+  }
+
+  img:nth-child(2) {
+    width: px2vw(668px);
+    height: px2vw(260px);
+
+    bottom: px2vw(197px);
   }
 }
 
