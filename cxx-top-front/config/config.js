@@ -2,8 +2,8 @@ const env = require('./env')
 
 const port = 8001
 const api = {
-  local: 'http://m.topping.loseyear.com/',
-  prod: 'http://m.topping.loseyear.com/',
+  local: 'http://m.toppinghomme.com/',
+  prod: 'http://m.toppinghomme.com/',
 }
 
 module.exports = {
