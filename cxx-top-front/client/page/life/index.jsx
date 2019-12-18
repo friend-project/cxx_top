@@ -31,8 +31,14 @@ export default (props) => {
           tab === 'a'
             ? (
               <div className="life_ani">
-                <img src={`${img}image_${lang}/life_ani/life_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/life_ani_2.png`} />
+                <img
+                  className="animated bounceInUp"
+                  src={`${img}image_${lang}/life_ani/life_ani_1.png`}
+                />
+                <img
+                  className="animated bounceInDown"
+                  src={`${img}image_${lang}/life_ani/life_ani_2.png`}
+                />
               </div>
             ) : null
         }
@@ -40,8 +46,14 @@ export default (props) => {
           tab === 'b'
             ? (
               <div className="ranliao_ani">
-                <img src={`${img}image_${lang}/life_ani/ranliao_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/ranliao_ani_2.png`} />
+                <img
+                  className="animated bounceInUp"
+                  src={`${img}image_${lang}/life_ani/ranliao_ani_1.png`}
+                />
+                <img
+                  className="animated bounceInDown"
+                  src={`${img}image_${lang}/life_ani/ranliao_ani_2.png`}
+                />
               </div>
             ) : null
         }
@@ -49,8 +61,14 @@ export default (props) => {
           tab === 'c'
             ? (
               <div className="duwu_ani">
-                <img src={`${img}image_${lang}/life_ani/duwu_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/duwu_ani_2.png`} />
+                <img
+                  className="animated bounceInUp"
+                  src={`${img}image_${lang}/life_ani/duwu_ani_1.png`}
+                />
+                <img
+                  className="animated bounceInDown"
+                  src={`${img}image_${lang}/life_ani/duwu_ani_2.png`}
+                />
               </div>
             ) : null
         }
@@ -58,8 +76,14 @@ export default (props) => {
           tab === 'd'
             ? (
               <div className="jijie_ani">
-                <img src={`${img}image_${lang}/life_ani/jijie_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/jijie_ani_2.png`} />
+                <img
+                  className="animated bounceInUp"
+                  src={`${img}image_${lang}/life_ani/jijie_ani_1.png`}
+                />
+                <img
+                  className="animated bounceInDown"
+                  src={`${img}image_${lang}/life_ani/jijie_ani_2.png`}
+                />
               </div>
             ) : null
         }
@@ -67,8 +91,14 @@ export default (props) => {
           tab === 'e'
             ? (
               <div className="xianliang_ani">
-                <img src={`${img}image_${lang}/life_ani/xianliang_ani_1.png`} />
-                <img src={`${img}image_${lang}/life_ani/xianliang_ani_2.png`} />
+                <img
+                  className="animated bounceInUp"
+                  src={`${img}image_${lang}/life_ani/xianliang_ani_1.png`}
+                />
+                <img
+                  className="animated bounceInDown"
+                  src={`${img}image_${lang}/life_ani/xianliang_ani_2.png`}
+                />
               </div>
             ) : null
         }

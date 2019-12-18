@@ -4,15 +4,15 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url(./image/bg_a.png) no-repeat center center;
+  background: url(./image/bg_a.jpg) no-repeat center center;
   background-size: 100% 100%;
 
   &.a {
-    background: url(./image/bg_a.png) no-repeat center center;
+    background: url(./image/bg_a.jpg) no-repeat center center;
     background-size: 100% 100%;
   }
   &.b {
-    background: url(./image/bg_b.png) no-repeat center center;
+    background: url(./image/bg_b.jpg) no-repeat center center;
     background-size: 100% 101%;
   }
 
