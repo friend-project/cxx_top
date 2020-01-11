@@ -24,6 +24,8 @@ export default (props) => {
     }
   }, [tab])
 
+  console.log(lang)
+
   return (
     <>
       <div className={`life ${tab}`}>
