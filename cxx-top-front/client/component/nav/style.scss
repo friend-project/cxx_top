@@ -161,11 +161,19 @@
       background-size: 100% 100%;
     }
 
+    .luggage {
+      width: px2vw(336px);
+      height: px2vw(52px);
+
+      background: url(./image/luggage.png) no-repeat center center;
+      background-size: 100% 100%;
+    }
+
     .buy {
       width: px2vw(528px);
       height: px2vw(52px);
 
-      background: url(./image/life.png) no-repeat center center;
+      background: url(./image/buy.png) no-repeat center center;
       background-size: 100% 100%;
     }
   }

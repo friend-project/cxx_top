@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import SwiperLife from 'component/swiper-life'
 import SwiperBrand from 'component/swiper-brand'
 import SwiperClothing from 'component/swiper-clothing'
+import SwiperLuggage from 'component/swiper-luggage'
 
 import { setLang } from './reducer'
 
@@ -35,6 +36,9 @@ export default (props) => {
         </div>
         <div>
           <SwiperClothing {...props} />
+        </div>
+        <div>
+          <SwiperLuggage {...props} />
         </div>
       </Swiper>
       <div className="line" />

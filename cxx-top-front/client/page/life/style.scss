@@ -3,33 +3,41 @@
 .life {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
   background: url(./image/bg_a.jpg) no-repeat center center;
-  background-size: 100% 100%;
+  // background-size: 100% 100%;
+  background-size: cover;
 
   &.a {
     background: url(./image/bg_a.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
   &.b {
     background: url(./image/bg_b.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
   &.c {
     background: url(./image/bg_c.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
   &.d {
     background: url(./image/bg_d.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
   &.e {
     background: url(./image/bg_e.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
   &.f {
     background: url(./image/bg_f.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
   }
 
   .tab {

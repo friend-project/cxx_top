@@ -27,13 +27,11 @@ export default (props) => {
       cn: '服装和饰品',
       uri: 'clothing',
     },
-    /*
     {
       en: 'LUGGAGE',
       cn: '箱包',
       uri: 'luggage',
     },
-    */
     /*
     {
       en: 'CUSTOMMADE',

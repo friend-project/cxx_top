@@ -1,0 +1,17 @@
+@import "../../_base.scss";
+
+.luggage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(./image/bg_a.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.luggage_show {
+
+  img {
+    width: px2vw(690px);
+    margin: px2vw(20px) auto;
+  }
+}

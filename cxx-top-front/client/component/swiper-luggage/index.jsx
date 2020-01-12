@@ -8,15 +8,15 @@ export default (props) => {
   const [pop, setPop] = useState(false)
   const show = () => {
     if (pop) {
-      props.history.push('/life')
+      props.history.push('/luggage')
     } else {
-    setPop(true)
+      setPop(true)
     }
   }
 
   return (
     <div
-      className="swiper-life"
+      className="swiper-luggage"
     >
       <span
         className={pop ? 'img pop' : 'img'}
@@ -24,7 +24,7 @@ export default (props) => {
       />
       <p
         className="tit"
-      >巢品TOPPING白酒</p>
+      >箱包</p>
     </div>
   )
 }

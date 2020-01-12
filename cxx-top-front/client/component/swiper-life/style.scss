@@ -1,40 +1,56 @@
 @import "../../_base.scss";
 
 .swiper-life {
+  position: fixed;
   width: 100vw;
   height: 100vh;
 
   .img {
+    position: absolute;
+    top: px2vw(322px);
+    left: px2vw(123px);
+    z-index: 1;
     display: block;
     width: px2vw(504px);
     height: px2vw(690px);
-    margin: px2vw(322px) auto 0;
 
-    background: url(./image/life.jpg) no-repeat center center;
-    background-size: 100% 100%;
-  }
-
-  .tit {
-    width: px2vw(504px);
-    margin: px2vw(12px) auto 0;
-    text-align: left;
-    color: rgba(0, 0, 0, .5);
+    background: url(./image/bg_a.jpg) no-repeat center center;
+    background-size: cover;
   }
 
   .pop {
-    display: none;
-    position: fixed;
+    animation: imgPop 1s;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     z-index: 99999;
+    width: px2vw(750px);
+    height: px2vw(1440px);
+  }
 
-    background: url(./image/bg_a.jpg) no-repeat center center;
-    background-size: 100% 100%;
+  .tit {
+    position: absolute;
+    top: px2vw(1024px);
+    left: px2vw(123px);
+    width: px2vw(504px);
+    text-align: left;
+    color: rgba(0, 0, 0, .5);
+  }
+}
 
-    &.show {
-      display: block;
-    }
+@keyframes imgPop {
+  from {
+    top: px2vw(322px);
+    left: px2vw(123px);
+    z-index: 1;
+    display: block;
+    width: px2vw(504px);
+    height: px2vw(690px);
+  }
+  to {
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: px2vw(750px);
+    height: px2vw(1440px);
   }
 }
