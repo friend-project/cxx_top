@@ -45,7 +45,8 @@
     height: px2vw(20px);
     margin: 0 px2vw(11px);
 
-    background: rgb(255, 255, 255);
+    // background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     border-radius: 50% 50%;
 
     &.swiper-pagination-bullet-active {
