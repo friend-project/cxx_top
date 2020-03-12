@@ -109,11 +109,15 @@
     margin: px2vw(310px) px2vw(60px) 0;
 
     li {
-      height: px2vw(130px);
+      box-sizing: border-box;
+      height: px2vw(56px);
+      margin: px2vw(74px) 0 0;
 
       font-size: px2vw(55px);
       font-family: 'Bebas';
       line-height: px2vw(56px);
+
+      overflow: hidden;
     }
 
     li.active span,

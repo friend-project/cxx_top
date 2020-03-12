@@ -2,17 +2,24 @@ import React, {
   useState,
 } from 'react'
 
+import { useDispatch } from 'react-redux'
+
+import { setAutoPlay } from 'page/home/reducer'
+
 import './style.scss'
 
 export default (props) => {
+  const dispatch = useDispatch()
   const [pop, setPop] = useState(false)
   const show = () => {
-    if (pop) {
+    dispatch(setAutoPlay(false))
+    props.history.push('#c')
+    setPop(true)
+    setPop(true)
+    setTimeout(() => {
+      dispatch(setAutoPlay(true))
       props.history.push('/clothing#c')
-    } else {
-      props.history.push('#c')
-      setPop(true)
-    }
+    }, 1000)
   }
 
   return (

@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
 
-import { lang } from 'page/home/reducer'
+import { lang, autoPlay } from 'page/home/reducer'
 
 export default combineReducers({
+  autoPlay,
   lang,
 })

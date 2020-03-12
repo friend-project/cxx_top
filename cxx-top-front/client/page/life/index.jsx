@@ -24,8 +24,6 @@ export default (props) => {
     }
   }, [tab])
 
-  console.log(lang)
-
   return (
     <>
       <div className={`life ${tab}`}>
@@ -34,11 +32,11 @@ export default (props) => {
             ? (
               <div className="life_ani">
                 <img
-                  className="animated bounceInUp"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/life_ani_1.png`}
                 />
                 <img
-                  className="animated bounceInDown"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/life_ani_2.png`}
                 />
               </div>
@@ -49,11 +47,11 @@ export default (props) => {
             ? (
               <div className="ranliao_ani">
                 <img
-                  className="animated bounceInUp"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/ranliao_ani_1.png`}
                 />
                 <img
-                  className="animated bounceInDown"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/ranliao_ani_2.png`}
                 />
               </div>
@@ -64,11 +62,11 @@ export default (props) => {
             ? (
               <div className="duwu_ani">
                 <img
-                  className="animated bounceInUp"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/duwu_ani_1.png`}
                 />
                 <img
-                  className="animated bounceInDown"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/duwu_ani_2.png`}
                 />
               </div>
@@ -79,26 +77,26 @@ export default (props) => {
             ? (
               <div className="jijie_ani">
                 <img
-                  className="animated bounceInUp"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/jijie_ani_1.png`}
                 />
                 <img
-                  className="animated bounceInDown"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/jijie_ani_2.png`}
                 />
               </div>
             ) : null
         }
         {
-          tab === 'e'
+          tab === 'f'
             ? (
               <div className="xianliang_ani">
                 <img
-                  className="animated bounceInUp"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/xianliang_ani_1.png`}
                 />
                 <img
-                  className="animated bounceInDown"
+                  className="animated fadeIn"
                   src={`${img}image_${lang}/life_ani/xianliang_ani_2.png`}
                 />
               </div>
