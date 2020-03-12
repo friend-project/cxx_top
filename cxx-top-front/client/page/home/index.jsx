@@ -15,7 +15,6 @@ export default (props) => {
   const dispatch = useDispatch()
   const lang = useSelector(state => state.lang)
   const { autoPlay } = useSelector(state => state)
-  console.log(autoPlay)
   const params = {
     direction: 'horizontal',
     effect: 'fade',

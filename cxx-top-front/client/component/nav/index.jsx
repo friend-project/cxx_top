@@ -48,7 +48,7 @@ export default (props) => {
   const [open, setOpen] = useState(false)
 
   const jump = v => {
-    props.history.push(`/${v}`)
+    props.history.push(`/${v}${v === 'clothing' ? '#c' : ''}`)
     setOpen(false)
   }
 
